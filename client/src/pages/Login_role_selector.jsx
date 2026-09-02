@@ -24,7 +24,7 @@ function Login() {
         try {
             console.log("Login Success");
             const response = await axios.post(
-                "http://localhost:5000/api/auth/login",
+                "https://employee-management-system-6ib0.onrender.com/api/auth/login",
                 {
                     email,
                     password,

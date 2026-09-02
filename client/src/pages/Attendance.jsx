@@ -49,7 +49,7 @@ function Attendance() {
       setError("");
 
       const response = await axios.get(
-        `http://localhost:5000/api/attendance?date=${selectedDate}`,
+        `https://employee-management-system-6ib0.onrender.com/api/attendance?date=${selectedDate}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -89,7 +89,7 @@ function Attendance() {
       setError("");
 
       await axios.post(
-        "http://localhost:5000/api/attendance/check-in",
+        "https://employee-management-system-6ib0.onrender.com/api/attendance/check-in",
         { employeeId },
         {
           headers: {
@@ -114,7 +114,7 @@ function Attendance() {
       setError("");
 
       await axios.post(
-        "http://localhost:5000/api/attendance/check-out",
+        "https://employee-management-system-6ib0.onrender.com/api/attendance/check-out",
         { employeeId },
         {
           headers: {

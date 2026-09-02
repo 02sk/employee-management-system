@@ -39,7 +39,7 @@ function Employees() {
     const fetchEmployees = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:5000/api/employees",
+          "https://employee-management-system-6ib0.onrender.com/api/employees",
           {
             headers: {
               Authorization: `Bearer ${token}`,

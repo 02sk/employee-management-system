@@ -31,7 +31,7 @@ function EmployeeProfile() {
         setError("");
 
         const response = await axios.get(
-          "http://localhost:5000/api/auth/me",
+          "https://employee-management-system-6ib0.onrender.com/api/auth/me",
           {
             headers: {
               Authorization: `Bearer ${token}`,

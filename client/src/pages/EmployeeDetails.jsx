@@ -44,7 +44,7 @@ const [copied, setCopied] = useState(false);
     const fetchEmployee = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/employees/${id}`,
+          `https://employee-management-system-6ib0.onrender.com/api/employees/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -80,7 +80,7 @@ const [copied, setCopied] = useState(false);
 
   try {
     const response = await axios.post(
-      `http://localhost:5000/api/employees/${id}/account`,
+      `https://employee-management-system-6ib0.onrender.com/api/employees/${id}/account`,
       {},
       {
         headers: {
@@ -114,7 +114,7 @@ const [copied, setCopied] = useState(false);
     setDeleteError("");
 
     try {
-      await axios.delete(`http://localhost:5000/api/employees/${id}`, {
+      await axios.delete(`https://employee-management-system-6ib0.onrender.com/api/employees/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

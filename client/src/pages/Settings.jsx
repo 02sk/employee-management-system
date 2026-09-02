@@ -43,7 +43,7 @@ function Settings() {
         setLoading(true);
         setError("");
 
-        const response = await axios.get("http://localhost:5000/api/settings", {
+        const response = await axios.get("https://employee-management-system-6ib0.onrender.com/api/settings", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -95,7 +95,7 @@ function Settings() {
       setError("");
 
       const response = await axios.put(
-        "http://localhost:5000/api/settings",
+        "https://employee-management-system-6ib0.onrender.com/api/settings",
         {
           workStartTime,
           lateAfterMinutes: Number(lateAfterMinutes),

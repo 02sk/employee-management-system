@@ -52,7 +52,7 @@ function AddEmployee() {
 
     try {
       await axios.post(
-        "http://localhost:5000/api/employees",
+        "https://employee-management-system-6ib0.onrender.com/api/employees",
         formData,
         {
           headers: {

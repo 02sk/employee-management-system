@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"},{"v":{"$numberInt":"2"},"key":{"employee":{"$numberInt":"1"},"startDate":{"$numberInt":"1"},"endDate":{"$numberInt":"1"}},"name":"employee_1_startDate_1_endDate_1"}],"uuid":"46a23722db1746ccb8bd42321d819411","collectionName":"leaves","type":"collection"}

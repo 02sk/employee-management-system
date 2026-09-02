@@ -65,7 +65,7 @@ function Leaves() {
       setError("");
 
       const response = await axios.get(
-        "http://localhost:5000/api/leaves",
+        "https://employee-management-system-6ib0.onrender.com/api/leaves",
         authConfig
       );
 
@@ -96,7 +96,7 @@ function Leaves() {
       setEmployeesLoading(true);
 
       const response = await axios.get(
-        "http://localhost:5000/api/employees",
+        "https://employee-management-system-6ib0.onrender.com/api/employees",
         authConfig
       );
 
@@ -182,7 +182,7 @@ function Leaves() {
       setMessage("");
 
       await axios.post(
-        "http://localhost:5000/api/leaves",
+        "https://employee-management-system-6ib0.onrender.com/api/leaves",
         form,
         authConfig
       );
@@ -222,7 +222,7 @@ function Leaves() {
       setMessage("");
 
       await axios.put(
-        `http://localhost:5000/api/leaves/${id}/${actionName}`,
+        `https://employee-management-system-6ib0.onrender.com/api/leaves/${id}/${actionName}`,
         {},
         authConfig
       );
