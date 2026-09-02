@@ -1,0 +1,3 @@
+.env
+mongo-backup/
+node_modules/
